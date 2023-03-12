@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>WebCampBackendNew</title>
+  </head>
+  <p id="notion"><%= flash[:notice] %></p>
+  <p><strong>Title:</strong>
+  <span>
+    <%= @book.title %>
+  </span>
+  </p>
+  <p><strong>Body:</strong>
+  <span>
+    <%= @book.body %>
+  </span>
+  </p>
+  <td><%= link_to "Edit", edit_book_path(@book.id) %></td>
+  |
+  <td><%= link_to "Back", books_path %></td>
+</html>
+
+
+
